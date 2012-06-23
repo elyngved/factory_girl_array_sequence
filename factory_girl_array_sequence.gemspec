@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib', __FILE__)
+$:.push File.expand_path('../lib', __FILE__)
 require 'factory_girl_array_sequence/version'
 
 Gem::Specification.new do |gem|
