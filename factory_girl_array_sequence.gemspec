@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/factory_girl_array_sequence/version', __FILE__)
+require File.expand_path('../lib', __FILE__)
+require 'factory_girl_array_sequence/version'
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Erik Lyngved"]
@@ -16,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.version       = FactoryGirlArraySequence::VERSION
 
   gem.add_dependency 'factory_girl', '~> 3.0'
+
   gem.add_development_dependency 'rake', '~> 0.9'
-  gem.add_development_dependency 'rdoc', '~> 3.9'
   gem.add_development_dependency 'rspec', '~> 2.5'
 end
