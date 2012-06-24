@@ -14,8 +14,11 @@ module FactoryGirlArraySequence
 end
 
 module FactoryGirl
-  def self.array_sequence(array)
-    FactoryGirlArraySequence.init(array)
+  def self.array_sequence(name, *args, &block)
+    options = args.extract_options!
+    value = FactoryGirlArraySequence.init(args)
+    value << options
+    sequence(name, args, &block)
   end
 end
 
